@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Amiri", serif;
+  --font-display: "Space Grotesk", "IBM Plex Sans Arabic", sans-serif;
+
+  --color-matte-black: #0A0A0A;
+  --color-warm-beige: #D9D2C5;
+  --color-espresso: #2D1B14;
+  --color-cream: #F5F5F0;
+  --color-bronze: #A67C52;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-matte-black text-cream selection:bg-bronze selection:text-white font-sans overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  /* Support for Arabic specific line heights */
+  [dir="ar"] body {
+    line-height: 1.8;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Custom transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 800ms, transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
