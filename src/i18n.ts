@@ -55,11 +55,11 @@ const resources = {
   ar: {
     translation: {
       nav: {
-        about: 'About',
-        menu: 'Menu',
-        experience: 'Experience',
-        location: 'Location',
-        contact: 'Contact',
+        about: 'من نحن',
+        menu: 'القائمة',
+        experience: 'التجربة',
+        location: 'الموقع',
+        contact: 'اتصل بنا',
       },
       hero: {
         headline: 'قهوة مصنوعة. لحظات راقية.',
@@ -69,7 +69,7 @@ const resources = {
       },
       about: {
         title: 'تحميص حرفي في قلب الرياض',
-        subtitle: 'Our Story',
+        subtitle: 'قصتنا',
         description: 'في CAF LAB، القهوة ليست مجرد مشروب؛ إنها رحلة حسية. ولدت في قلب الرياض، حيث نجمع بين تقنيات التحميص اليدوي وأفخر أنواع البن في العالم لنخلق تجربة مختصة لا تُنسى.',
         inner_peace: 'سلام داخلي',
         sanctuary: 'ملاذ في أعالي السماء',
@@ -81,12 +81,12 @@ const resources = {
       experience: {
         title: 'براعة في كل سكب',
         description: 'من التحميص الأول إلى السكب الأخير، نحافظ على معايير التميز التي تكرم ثقافة القهوة في المملكة العربية السعودية.',
-        gallery: 'See Gallery',
+        gallery: 'شاهد المعرض',
         quote: '"روح الرياض في حبة بن واحدة."',
       },
       menu: {
         title: 'القائمة الخاصة',
-        subtitle: 'Signature Selection',
+        subtitle: 'اختياراتنا المميزة',
         specialty: 'قهوة مختصة',
         bakery: 'المخبوزات والحلويات',
       },
